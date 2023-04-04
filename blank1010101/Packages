@@ -7,6 +7,8 @@ Architecture: iphoneos-arm
 Filename: ./debs/discold-0.1.1.deb
 Size: 6580
 MD5sum: a23fc764ecebdae21f1f6d87cce288ad
+SHA1: a9f19d4ccc96e833f7ee92a9da625f15f8922843
+SHA256: 33b3ebaa95754764334c46aa9ac31a5d28aee43a1590ee55c2685679406b7cdf
 Description: DiscOld is a tweak that will fix Discord on old iOS versions, hence the name. It accomplishes this by slightly rewriting the JavaScript bundle behind Discord in order to fix a crash when in servers with certain features activated (e.g. server banners).
 Name: DiscOld [BETA]
 Author: InvoxiPlayGames
