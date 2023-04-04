@@ -1,5 +1,5 @@
 Package: uk.invoxiplaygames.discold
-Version: 1.1.1
+Version: 0.1.1
 Section: Tweaks
 Maintainer: InvoxiPlayGames
 Depends: firmware (<7.1.2)
@@ -10,5 +10,5 @@ MD5sum: a23fc764ecebdae21f1f6d87cce288ad
 Description: DiscOld is a tweak that will fix Discord on old iOS versions, hence the name. It accomplishes this by slightly rewriting the JavaScript bundle behind Discord in order to fix a crash when in servers with certain features activated (e.g. server banners).
 Name: DiscOld [BETA]
 Author: InvoxiPlayGames
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=packages
+Depiction: https://joshmakessites.github.io/repoxydia/depictions/?p=packages
 
