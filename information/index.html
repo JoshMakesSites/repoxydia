@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///Users/828602/Downloads/repoxydia-gh-pages/information/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>PackageName</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/font-awesome.min.css">
+	<link rel="stylesheet" href="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/style.css">
+	<script src="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/jquery.min.js"></script>
+	<script type="text/javascript" src="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/jquery.querystring.js"></script>
+	<script type="text/javascript" src="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/data-loader-engine.js"></script>
+	<script type="text/javascript" src="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/ios_version_check.js"></script>
+	<script type="text/javascript" src="file:///Users/828602/Downloads/repoxydia-gh-pages/information/index_files/content-blocks-index.js"></script>
+	<script type="text/javascript">
+
+		bundleid = $.QueryString['p'];
+
+		var contentBlocks = getContentBlocks();
+
+		$(document).ready(function () {
+			//return;
+			populateContentBlocks(
+				(bundleid + "/info.xml"),
+				contentBlocks,
+				() => {
+					$("#packageError").show();
+					$("#packageInformation").hide();
+				},
+				(xml) => {
+					document.title = $(xml).find("package>name").text();
+				}
+			)
+
+		}); // ready
+	</script>
+</head>
+<body>
+	<br>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				Xydia
+			</div>
+			<div class="card-body">
+				<p class="card-text">Update <b>4.12.2023</b>
+			 information</p></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				Description
+			</div>
+			<div class="card-body">
+				<p class="card-text">Update 4.12.X will contain bugfixes for the repo (fixing old/crashing tweaks/themes. This update will also fix broken tweaks/themes by silently removing them from our repo, if you notice any themes/tweaks you're using have an update or are removed from the repo, notify me.</p>
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="packageError" style="">
+		<div class="container">
+			<div class="alert alert-danger">
+				Page didn't load correctly. Try again later.</div>
+		</div>
+	</div>
+
+
+
+
+</body></html>
